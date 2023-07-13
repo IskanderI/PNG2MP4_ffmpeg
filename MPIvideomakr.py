@@ -7,6 +7,7 @@ Created on Mon Mar 28 13:54:29 2022
 
 """
 import subprocess,os,time,sys
+import argparse
 
 def run(cmd): # for windows through powershell
     result=subprocess.run(["powershell", "-Command Invoke-Expression ", cmd], capture_output=True, text=True)
@@ -16,8 +17,11 @@ def run(cmd): # for windows through powershell
 Import tk for file selection
 to run with dialog windows in windows machines
 # """
+parser = argparse.ArgumentParser()
 if sys.platform =='win32':
-    ncores = 6
+    parser.add_argument("ncores", help="Amount of cores",type=str)
+    args       = parser.parse_args()
+    ncores     = args.ncores
     from tkinter import filedialog as fd
     from tkinter import Tk
     win        = Tk()
@@ -28,8 +32,7 @@ if sys.platform =='win32':
     win.after(1000,lambda:win.destroy())
     win.mainloop()
 else:
-    import argparse
-    parser = argparse.ArgumentParser()
+
     parser.add_argument("ncores", help="Amount of cores",type=str)
     parser.add_argument("Folder", help="Folder of the images",type=str)
     parser.add_argument("ptsave",help="Folder where to put the output",type=str)
