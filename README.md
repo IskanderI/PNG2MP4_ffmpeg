@@ -1,10 +1,11 @@
 # PNG2MP4_ffmpeg
 This python script converts image folders to .mp4 videos. 
+
 Thanks to great compressibility options your data can be stored in a more compressed way!
 #### Script based on:
   - 1. ffmpeg encoder to create videos which means high efficiency.
   - 2. MPI library to parallelise a task for multiple folders.
-## How to use
+## How to Install
 ### Windows
 #### (minimal)
 
@@ -20,3 +21,8 @@ Thanks to great compressibility options your data can be stored in a more compre
 >   conda deactivate
 
 >   sudo apt instalacl ffmpeg
+## How to Use
+To start a script, run from preferred command line, see next example:
+
+> python3 /mnt/path_to_script/PNG2MP4_ffmpeg/MPIvideomakr.py /mnt/path_to_target/pics/ /mnt/path_to_save/vids/
+
