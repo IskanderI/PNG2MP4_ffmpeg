@@ -1,7 +1,7 @@
 # PNG2MP4_ffmpeg
 This python script converts image folders to .mp4 videos. 
 
-Thanks to great compressibility options your data can be stored in a more compressed way!
+Thanks to great compressibility options your data can be stored in a more compressed way! :shipit:
 #### Script based on:
   - 1. ffmpeg encoder to create videos which means high efficiency.
   - 2. MPI library to parallelise a task for multiple folders.
