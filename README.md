@@ -26,14 +26,18 @@ Thanks to great compressibility options your data can be stored in a more compre
 To start a script, run from preferred command line, see next example:
 
 > python3 /mnt/path_to_script/PNG2MP4_ffmpeg/MPIvideomakr.py  6 /mnt/path_to_target/pics/ /mnt/path_to_save/vids/
+
 Where 6 in this example shows amount of cores that will be used by script.
 
 ##### For windows:
 Start a script with 
 > python3 /mnt/path_to_script/PNG2MP4_ffmpeg/MPIvideomakr.py
+
 Then an interactive window will suggest to choose a folder with tests with images.
+
 Second interactive window will ask for folder where to save videos.
+
 For windows amount of cores is defaulted at 6.
 
-# Warning
-## For correct working of script all images will be renamed!!
+> **Note**
+>##  Warning! For correct working of script all images will be renamed!!
