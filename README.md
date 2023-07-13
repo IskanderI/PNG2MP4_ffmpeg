@@ -9,11 +9,13 @@ Thanks to great compressibility options your data can be stored in a more compre
 ## Linux 
 1. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 > bash ./Miniconda3-py38_23.5.0-3-Linux-x86_64.sh
+
 > conda activate
 2. Install MPI4py
 > pip install mpi4py 
 3. Install ffmpeg
 > conda deactivate
+
 > sudo apt install ffmpeg
 ### Windows
 #### (minimal)
@@ -21,8 +23,8 @@ Thanks to great compressibility options your data can be stored in a more compre
 
 #### (easy)
 1. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-Start Anaconda Prompt (miniconda3) as administrator
-2. Install MPI4py
+2. Start Anaconda Prompt (miniconda3) as administrator
+3. Install MPI4py
 > conda install mpi4py 
 3. Install ffmpeg
 > conda install ffmpeg
