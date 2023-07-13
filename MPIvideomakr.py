@@ -44,8 +44,8 @@ else:
 # ===================================
 
 # Put the spaces before and after!
-target = " C:/Users/$($Env:UserName)/.julia/conda/3/Scripts/activate.bat "
-cmd    =  " mpiexec -n " + ncores +" python3 " + sys.path[0] + "/makevids.py "
+target = " C:/ProgramData/miniconda3/Scripts/activate.bat "
+cmd    =  " mpiexec -n " + ncores +" python " + sys.path[0] + "/makevids.py "
 
 if sys.platform =='win32':
     run(target)
