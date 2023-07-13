@@ -31,13 +31,12 @@ Where 6 in this example shows amount of cores that will be used by script.
 
 ##### For windows:
 Start a script with 
-> python3 /mnt/path_to_script/PNG2MP4_ffmpeg/MPIvideomakr.py
+> python3 /mnt/path_to_script/PNG2MP4_ffmpeg/MPIvideomakr.py 6
 
 Then an interactive window will suggest to choose a folder with tests with images.
 
 Second interactive window will ask for folder where to save videos.
 
-For windows amount of cores is defaulted at 6.
 
 > **Note**
 >##  Warning! For correct working of script all images will be renamed!!
