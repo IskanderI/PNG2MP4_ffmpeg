@@ -9,9 +9,6 @@ Created on Mon Mar 28 13:54:29 2022
 import subprocess,os,time,sys
 import argparse
 
-def run(cmd): # for windows through powershell
-    result=subprocess.run(["powershell", "-Command Invoke-Expression ", cmd], capture_output=True, text=True)
-    print(result.stdout)
 #======================================
 """
 Import tk for file selection
@@ -44,11 +41,5 @@ else:
 # ===================================
 
 # Put the spaces before and after!
-target = " C:/ProgramData/miniconda3/Scripts/activate.bat "
 cmd    =  " mpiexec -n " + ncores +" python " + sys.path[0] + "/makevids.py "
-
-if sys.platform =='win32':
-    run(target)
-    run(cmd+dirselect+' '+saveselect)
-else:
-    os.system(cmd  + dirselect + ' ' + saveselect ) 
+os.system(cmd  + dirselect + ' ' + saveselect ) 
