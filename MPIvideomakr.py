@@ -30,7 +30,7 @@ if sys.platform =='win32':
 else:
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("ncores", help="Amount of cores",type=int)
+    parser.add_argument("ncores", help="Amount of cores",type=str)
     parser.add_argument("Folder", help="Folder of the images",type=str)
     parser.add_argument("ptsave",help="Folder where to put the output",type=str)
     args       = parser.parse_args()
