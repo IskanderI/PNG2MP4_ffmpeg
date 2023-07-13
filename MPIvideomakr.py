@@ -9,7 +9,7 @@ Created on Mon Mar 28 13:54:29 2022
 import subprocess,os,time,sys
 # Put the spaces before and after!
 target = " C:/Users/$($Env:UserName)/.julia/conda/3/Scripts/activate.bat "
-cmd    =  " mpiexec -n 6 python3 ." + os.getcwd() + "/makevids.py "
+cmd    =  " mpiexec -n 6 python3 " + os.getcwd() + "/makevids.py "
 
 #======================================
 """
