@@ -10,4 +10,4 @@ N=$(find $dir -type f -name '*.png*' | sed -r 's|/[^/]+$||' |sort |uniq |wc -l)
 echo Number of Folders : $N
 echo and they are : $(find $dir -type f -name '*.png*' | sed -r 's|/[^/]+$||' |sort |uniq)
 # run LaMEM:
-mpiexec -n $N python3 /local/home/iskander/scripts/makevidsmpi/makevids.py $dir $savedir
+mpiexec -n $N python3 /local/home/iskander/scripts/makevidsmpi/__main__.py $dir $savedir
