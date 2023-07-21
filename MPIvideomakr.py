@@ -41,5 +41,5 @@ else:
 # ===================================
 
 # Put the spaces before and after!
-cmd    =  " mpiexec -n " + ncores +" python " + sys.path[0] + "/makevids.py "
+cmd    =  " mpiexec -n " + ncores +" python " + sys.path[0] + "/__main__.py "
 os.system(cmd  + dirselect + ' ' + saveselect ) 
