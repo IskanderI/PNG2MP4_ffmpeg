@@ -15,10 +15,9 @@ Import tk for file selection
 to run with dialog windows in windows machines
 # """
 parser = argparse.ArgumentParser()
+parser.add_argument("ncores", help="Amount of cores",type=str)
 if sys.platform =='win32':
-    parser.add_argument("ncores", help="Amount of cores",type=str)
     args       = parser.parse_args()
-    ncores     = args.ncores
     from tkinter import filedialog as fd
     from tkinter import Tk
     win        = Tk()
@@ -30,13 +29,12 @@ if sys.platform =='win32':
     win.mainloop()
 else:
 
-    parser.add_argument("ncores", help="Amount of cores",type=str)
     parser.add_argument("Folder", help="Folder of the images",type=str)
     parser.add_argument("ptsave",help="Folder where to put the output",type=str)
     args       = parser.parse_args()
     dirselect  = args.Folder
     saveselect = args.ptsave
-    ncores     = args.ncores
+ncores     = args.ncores
 
 # ===================================
 
